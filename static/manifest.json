@@ -3,7 +3,7 @@
 	"theme_color": "#333333",
 	"name": "Password Generator",
 	"short_name": "Password",
-	"display": "fullscreen",
+	"display": "standalone",
 	"start_url": "/",
 	"icons": [
 		{
