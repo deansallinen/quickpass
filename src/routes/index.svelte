@@ -3,6 +3,8 @@
   import { fade } from "svelte/transition";
   import generatePassword from "password-generator";
   import confetti from "canvas-confetti";
+  import Sentencer from "sentencer";
+  let username = Sentencer.make("{{adjective}}-{{noun}}");
   let pwd;
   onMount(() => {
     confetti.create(document.getElementById("canvas"), {
@@ -43,6 +45,7 @@
 
 <main>
   {#if pwd}
+    <h1>{username}</h1>
     <h2 transition:fade={{ duration: 200 }}>{pwd}</h2>
   {/if}
 </main>
